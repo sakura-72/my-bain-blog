@@ -1,5 +1,5 @@
 ---
-Lerntagebuch
+My BAIN Blog
 ---
 
 ## Willkommen zu meinem Lerntagebuch
