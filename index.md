@@ -1,5 +1,6 @@
 ---
-My BAIN Blog
+title: My BAIN Blog
+date: 2020-09-20
 ---
 
 ## Willkommen zu meinem Lerntagebuch
