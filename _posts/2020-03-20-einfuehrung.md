@@ -1,6 +1,6 @@
 ---
 title: "Einführungsartikel"
-date: 2020-09-24
+date: 2020-09-10
 ---
 
 Et c'est parti!
