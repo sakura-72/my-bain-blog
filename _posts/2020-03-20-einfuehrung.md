@@ -3,7 +3,7 @@ title: "Einführungsartikel"
 date: 2020-09-10
 ---
 
-<h1>Et c'est parti!>/h1>
+<h1>Et c'est parti!</h1>
 Wie der Heading es schon sagt, es geht mit einem neuen Semester wieder los. Und hier genauer um das Modul Bibliotheks- und Archivinformatik (BAIN).
   
 <h2>Une petite introduction</h2>
