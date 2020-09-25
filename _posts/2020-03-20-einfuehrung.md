@@ -19,3 +19,6 @@ Dass wir jetzt mit BAIN die Kulisse hinter den Archivierungs- und Bibliothekssof
 Einzig war ich mir gewünscht hätte, wäre ein Einblick in einer Museumssoftware zu bekommen, zum Beispiel von MuseumPlus. Auch wenn diese Software nicht besonders komplex und nicht besonders hochgewertet von Informationswissenschaftler, wäre es für ein grosser Pluspunkt gewesen, da ich nach dem Studium gerne in einem Museumsarchiv arbeiten möchte.
 
 Im Grossen und Ganzen bin ich auf die kommenden Einheiten gespannt!
+
+
+p.s.: Oh ja, es ist kein Zufall, dass meine Headings auf Französisch sind. Es ist meine Muttersprache ;)
