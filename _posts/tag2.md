@@ -26,7 +26,9 @@ Allerdings wenn man die Felder der Katalogisierung (RDA) kennt, dann ist auch da
 
 <h2>Einführung in Koha</h2>
 Open Source Katalogisierungssoftware! Auch für kommerzielle Nutzung verwendbar. 
-SQL wird aks Datenbank-Sprache benutzt, JavaScript für die Oberfläche aber vorwiegend mit Perl geschrieben (37%) > https://www.openhub.net/p/koha 
+SQL wird aks Datenbank-Sprache benutzt, JavaScript für die Oberfläche aber vorwiegend mit Perl geschrieben (37%) 
+> https://www.openhub.net/p/koha
+
 Um eine Opensource Software zu beurteilen, kann man Statistiken auf Openhub schauen: Wie sieht es mit der Nutzung aus? Die Weiterentwicklung? Welche Programmiersprachen werden verwendet? 
 
 
