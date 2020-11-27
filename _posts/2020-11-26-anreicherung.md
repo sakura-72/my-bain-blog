@@ -65,10 +65,10 @@ Wir wählen Export > Templating ... Und fügen die Ausgangsbasis und den Row Tem
         <subfield code="a">' + v + '</subfield>
     </datafield>', '')}}
     <datafield tag="260" ind1=" " ind2=" ">
-        <subfield code="b">{{forNonBlank(cells["Publisher"].value.escape('xml'), v, v, '')}}
+        <subfield code="b">{{forNonBlank(cells["Publisher"].value.escape('xml'), v, v, '')}}</subfield>
     </datafield>
     <datafield tag="264" ind1=" " ind2=" ">
-        <subfield code="b">{{cells["Publisher"].value.escape('xml')}}
+        <subfield code="b">{{cells["Publisher"].value.escape('xml')}}</subfield>
     </datafield>{{
     forEach(cells['Subjects'].value.split('|'), v ,'
     <datafield tag="650" ind1="0" ind2=" ">
@@ -82,6 +82,11 @@ Wir wählen Export > Templating ... Und fügen die Ausgangsbasis und den Row Tem
     }}
     </record>
     ```
+
+<h2>Kommentar zu dieser Anreicherung</h1>
+* Die leere Zellen, also wo keine GND-Nummer und keine Geburtsdatum steht, brauchen ein Platzhalter. Dies ist nötig damit die Autoren wieder zusammengeführt werden können und damit im Export keine "null" Zellen (wo eben keine Daten verfügrbar sind) mitkommen.
+* Auch habe ich die Zellen nicht zusammengeführt.
+* Um dies nachzuvollziehen, kann [dieser Lösungsweg(https://pad.gwdg.de/ywogyRNTQ_CTg9PvrQywsQ?both#)] angeschaut werden.
 
 
 
