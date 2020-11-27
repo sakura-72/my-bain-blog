@@ -37,51 +37,51 @@ Wir wählen Export > Templating ... Und fügen die Ausgangsbasis und den Row Tem
     
 * Und den Row Template:
 
-```xml
-<record>
-<leader>     nab a22     uu 4500</leader>
-<controlfield tag="001">{{cells['URL'].value.replace('https://doaj.org/article/','').escape('xml')}}</controlfield>
-<datafield tag="022" ind1=" " ind2=" ">
-    <subfield code="a">{{cells['ISSNs'].value.escape('xml')}}</subfield>
-</datafield>{{
-forNonBlank(
-    cells['DOI'].value,
-    v,
-    '
-<datafield tag="024" ind1="7" ind2=" ">
-    <subfield code="a">' + v.escape('xml') + '</subfield>
-    <subfield code="2">doi</subfield>        
-</datafield>',
-    ''
-)
-}}
-<datafield tag="041" ind1=" " ind2=" ">
-    <subfield code="a">{{cells['Language'].value.escape('xml')}}</subfield>
-</datafield>
-<datafield tag="100" ind1="0" ind2=" ">
-    <subfield code="a">{{cells['Authors'].value.split('|')[0].escape('xml')}}</subfield>
-</datafield>{{forNonBlank(cells["Title"].value.escape('xml'), v, '
-<datafield tag="245" ind1="0" ind2="0">
-    <subfield code="a">' + v + '</subfield>
-</datafield>', '')}}
-<datafield tag="260" ind1=" " ind2=" ">
-    <subfield code="b">{{forNonBlank(cells["Publisher"].value.escape('xml'), v, v, '')}}
-</datafield>
-<datafield tag="264" ind1=" " ind2=" ">
-    <subfield code="b">{{cells["Publisher"].value.escape('xml')}}
-</datafield>{{
-forEach(cells['Subjects'].value.split('|'), v ,'
-<datafield tag="650" ind1="0" ind2=" ">
-    <subfield code="a">' + v.escape('xml') + '</subfield>
-</datafield>')
-}}{{
-forEach(cells['Authors'].value.split('|').slice(1), v ,'
-<datafield tag="700" ind1="0" ind2=" ">
-    <subfield code="a">' + v.escape('xml') + '</subfield>
-</datafield>')
-}}
-</record>
-```
+    ```xml
+    <record>
+    <leader>     nab a22     uu 4500</leader>
+    <controlfield tag="001">{{cells['URL'].value.replace('https://doaj.org/article/','').escape('xml')}}</controlfield>
+    <datafield tag="022" ind1=" " ind2=" ">
+        <subfield code="a">{{cells['ISSNs'].value.escape('xml')}}</subfield>
+    </datafield>{{
+    forNonBlank(
+        cells['DOI'].value,
+        v,
+        '
+    <datafield tag="024" ind1="7" ind2=" ">
+        <subfield code="a">' + v.escape('xml') + '</subfield>
+        <subfield code="2">doi</subfield>        
+    </datafield>',
+        ''
+    )
+    }}
+    <datafield tag="041" ind1=" " ind2=" ">
+        <subfield code="a">{{cells['Language'].value.escape('xml')}}</subfield>
+    </datafield>
+    <datafield tag="100" ind1="0" ind2=" ">
+        <subfield code="a">{{cells['Authors'].value.split('|')[0].escape('xml')}}</subfield>
+    </datafield>{{forNonBlank(cells["Title"].value.escape('xml'), v, '
+    <datafield tag="245" ind1="0" ind2="0">
+        <subfield code="a">' + v + '</subfield>
+    </datafield>', '')}}
+    <datafield tag="260" ind1=" " ind2=" ">
+        <subfield code="b">{{forNonBlank(cells["Publisher"].value.escape('xml'), v, v, '')}}
+    </datafield>
+    <datafield tag="264" ind1=" " ind2=" ">
+        <subfield code="b">{{cells["Publisher"].value.escape('xml')}}
+    </datafield>{{
+    forEach(cells['Subjects'].value.split('|'), v ,'
+    <datafield tag="650" ind1="0" ind2=" ">
+        <subfield code="a">' + v.escape('xml') + '</subfield>
+    </datafield>')
+    }}{{
+    forEach(cells['Authors'].value.split('|').slice(1), v ,'
+    <datafield tag="700" ind1="0" ind2=" ">
+        <subfield code="a">' + v.escape('xml') + '</subfield>
+    </datafield>')
+    }}
+    </record>
+    ```
 
 
 
