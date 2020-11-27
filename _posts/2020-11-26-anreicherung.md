@@ -21,10 +21,10 @@ Nicht alle Zellen haben gematched, aber ich fahre weiter mit den Zellen die gepa
 
 Somit kommen zwei neuen Kolumnen rechts von der Kolumne "Autor", dies aber nur wo die Namen von Autoren wirklich gematched haben.
 
-<h2>Jetzt wird exportiert! Hier nutze ich die Vorlage, welche wir gemeinsam am 7. November erschafft haben:</h2>
+<h3>Jetzt wird exportiert! Hier nutze ich die Vorlage, welche wir gemeinsam am 7. November erschafft haben:</h3>
 Wir wählen Export > Templating ... Und fügen die Ausgangsbasis und den Row Template. Wenn das gemacht worden ist, einfach auf "Export" drücken und lokal speichern.
 
-# Die Ausgangsbasis:
+## Die Ausgangsbasis:
 * Prefix:
     ```xml
     <collection xmlns="http://www.loc.gov/MARC21/slim">
@@ -36,7 +36,6 @@ Wir wählen Export > Templating ... Und fügen die Ausgangsbasis und den Row Tem
     ```
     
 * Und den Row Template:
-
     ```xml
     <record>
     <leader>     nab a22     uu 4500</leader>
