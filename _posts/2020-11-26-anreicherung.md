@@ -25,6 +25,7 @@ Somit kommen zwei neuen Kolumnen rechts von der Kolumne "Autor", dies aber nur w
 Wir wählen Export > Templating ... Und fügen die Ausgangsbasis und den Row Template. Wenn das gemacht worden ist, einfach auf "Export" drücken und lokal speichern.
 
 <h4>Die Ausgangsbasis:</h4>
+
 * Prefix:
     ```xml
     <collection xmlns="http://www.loc.gov/MARC21/slim">
