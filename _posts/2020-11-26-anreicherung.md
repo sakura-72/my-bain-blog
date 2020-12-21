@@ -25,7 +25,7 @@ Somit kommen zwei neuen Kolumnen rechts von der Kolumne "Autor", dies aber nur w
 Hier nutze ich die Vorlage, welche wir gemeinsam am 7. November erschafft haben:
 Wir wählen Export > Templating ... Und fügen die Ausgangsbasis und den Row Template. Wenn das gemacht worden ist, einfach auf "Export" drücken und lokal speichern.
 
-### Die Ausgangsbasis:
+### Die Ausgangslage:
 
 * Prefix:
     ```xml
