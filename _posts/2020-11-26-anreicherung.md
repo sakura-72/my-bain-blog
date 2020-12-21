@@ -3,7 +3,7 @@ title: "Anreicherung mit GND-Einträge"
 date: 2020-11-26
 ---
 
-<h1>Aufgabe Anreicherung mit lobid-gnd</h1>
+# Aufgabe Anreicherung mit lobid-gnd
 Man öffnet OpenRefine und somit auch das bis jetzt bearbeiteten Projekt in OpenRefine. Anhand der [allgemeine Anleitung im Blog von lobid-gnd](https://blog.lobid.org/2018/08/27/openrefine.html) wurden die Autoren Namen mit der GND abgestummen (reconcialiate). Dies mit folgende Schritte:
 * Spalte Autoren auswählen
 * Dann auf "Reconcialiate" und > "Start Reconciliation"
@@ -21,10 +21,11 @@ Nicht alle Zellen haben gematched, aber ich fahre weiter mit den Zellen die gepa
 
 Somit kommen zwei neuen Kolumnen rechts von der Kolumne "Autor", dies aber nur wo die Namen von Autoren wirklich gematched haben.
 
-<h3>Jetzt wird exportiert! Hier nutze ich die Vorlage, welche wir gemeinsam am 7. November erschafft haben:</h3>
+### Jetzt wird exportiert! 
+Hier nutze ich die Vorlage, welche wir gemeinsam am 7. November erschafft haben:
 Wir wählen Export > Templating ... Und fügen die Ausgangsbasis und den Row Template. Wenn das gemacht worden ist, einfach auf "Export" drücken und lokal speichern.
 
-<h4>Die Ausgangsbasis:</h4>
+### Die Ausgangsbasis:
 
 * Prefix:
     ```xml
@@ -83,10 +84,10 @@ Wir wählen Export > Templating ... Und fügen die Ausgangsbasis und den Row Tem
     </record>
     ```
 
-<h2>Kommentar zu dieser Anreicherung</h1>
+## Kommentar zu dieser Anreicherung
 * Die leere Zellen, also wo keine GND-Nummer und keine Geburtsdatum steht, brauchen ein Platzhalter. Dies ist nötig damit die Autoren wieder zusammengeführt werden können und damit im Export keine "null" Zellen (wo eben keine Daten verfügrbar sind) mitkommen.
 * Auch habe ich die Zellen nicht zusammengeführt.
-* Um dies nachzuvollziehen, kann [dieser Lösungsweg(https://pad.gwdg.de/ywogyRNTQ_CTg9PvrQywsQ?both#)] angeschaut werden.
+* Um dies nachzuvollziehen, kann [dieser Lösungsweg](https://pad.gwdg.de/ywogyRNTQ_CTg9PvrQywsQ?both#) angeschaut werden.
 
 
 
