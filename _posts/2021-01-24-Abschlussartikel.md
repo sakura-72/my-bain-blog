@@ -1,4 +1,4 @@
 ---
 title: "Abschlussartikel"
-date: 2020-12-21
+date: 2021-01-24
 ---
